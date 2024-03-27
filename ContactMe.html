@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Salamagi Experience</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <style>
@@ -22,13 +22,62 @@ font-style: normal;
          a:hover{
           color: green;
          }
+         .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+           width: 50%;
+          }
+
+          a:link{
+            color:green
+          }
+          
+          .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: whitesmoke;
+        }
+
+        .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: whitesmoke;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        }
+
+        @keyframes fade-up {
+          0% {
+            opacity: 0;
+            transform: translateY(30px) scale(0.9);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+          }
+        }
+
+        .intro1 {
+          animation: fade-up 3s;
+        }
         
   </style>
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" id = "navbar">
+<body style = "background-color: black;">
+  <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark" id = "navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style = "font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
+      <a class="navbar-brand hover-underline-animation" href="index.html" style = "font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,31 +86,52 @@ font-style: normal;
           <li class="nav-item">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="MyWork.html" style = "font-family:century-gothic, sans-serif;">My Work</a>
+            <a class="nav-link hover-underline-animation" href="MyWork.html" style = "font-family:century-gothic, sans-serif;">My Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="MyPortfolio.html" style = "font-family:century-gothic, sans-serif;" >My Portfolio</a>
+            <a class="nav-link hover-underline-animation" href="MyPortfolio.html" style = "font-family:century-gothic, sans-serif;" >My Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="AboutMe.html" style = "font-family:century-gothic, sans-serif;">About Me</a>
+            <a class="nav-link hover-underline-animation" href="AboutMe.html" style = "font-family:century-gothic, sans-serif;">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ContactMe.html" style = "font-family:century-gothic, sans-serif;">Contact Me</a>
+            <a class="nav-link hover-underline-animation" href="ContactMe.html" style = "font-family:century-gothic, sans-serif;">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-    <h1>Contact Me Page</h1>
+  <div class = "intro1">
+    <h2 style = "text-align: center; color: whitesmoke;">Contact Me</h2>
 
-    <footer class="bg-dark text-white p-3">
-      <div class = "text-align">
-        &copy; 2024 Salamagi Architects  <a href="https://www.linkedin.com/in/niko-salmaggi-9917952b7/"><i class="bi bi-linkedin" style = text-align:center; ></i></a>
-        <a href = "https://www.instagram.com/niko_salmaggi/"><i class="bi bi-instagram" style = text-align:center;></i> </a>
-        <a style = float:right; >Devloped by Michael Ramos</a>
+    <img src = "Pic1.jpg" style = "width: 700px;" class = "center">
+    <div>
+    <p style = " color: whitesmoke; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit quos molestiae veniam vero odit quaerat nesciunt mollitia officiis. Debitis nam dicta similique ipsam amet, voluptatum explicabo illo eum alias!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti excepturi animi, quod voluptatum rerum velit, dolore distinctio dolores similique, culpa corporis. Consectetur quas, commodi eum eaque numquam amet sint!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae animi facilis, aut, asperiores dolores maxime sapiente ipsam expedita voluptate, delectus pariatur qui eligendi repellat rem fuga et veritatis architecto beatae?
+    </p>
+    </div>
+    <div style = "text-align: center;  color: whitesmoke;"> 
+      Reach me at: 
+      <a href = "mailto: abc@example.com" style = "text-align: center;  color: whitesmoke;" class = "hover-underline-animation">abc@example.com</a>
+      <p>My Socials: </p>
+    </div>
+  </div>
+    <footer class="bg-black text-white p-3">
+      <div class="container-fluid" style="font-family: century-gothic, sans-serif;">
+        <div class="row">
+          <div class="col-md-6 text-start">&copy; 2024 Salamagi Architects
+            <a href="https://www.linkedin.com/in/niko-salmaggi-9917952b7/" class="social">
+              <i id="social-linkedin" class="bi bi-linkedin text-white hover-underline-animation"></i>
+            </a>
+            <a href="https://www.instagram.com/niko_salmaggi/" class="social">
+              <i id="social-instagram" class="bi bi-instagram text-white hover-underline-animation"></i>
+            </a>
+          </div>
+          <div class="col-md-6 text-end">Developed by Michael Ramos</div>
+        </div>
       </div>
     </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
