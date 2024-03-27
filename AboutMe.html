@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Salamagi Experience</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <style>
@@ -21,13 +21,64 @@
          a:hover{
           color: green;
          }
+         
+         .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: whitesmoke;
+        }
+
+        .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: whitesmoke;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        }
+
+        @keyframes fade-up {
+          0% {
+            opacity: 0;
+            transform: translateY(30px) scale(0.9);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+          }
+        }
+
+        .intro1 {
+          animation: fade-up 2s;
+        }
+
+        .intro2 {
+          animation: fade-up 6s;
+        }
+
+        .intro3 {
+          animation: fade-up 9s;
+        }
+
+        .intro4 {
+          animation: fade-up 12s;
+        }
 
     </style>
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" id = "navbar">
+<body style = "background-color: black;">
+  <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark" id = "navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style = "font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
+      <a class="navbar-brand hover-underline-animation" href="index.html" style = "font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,33 +87,93 @@
           <li class="nav-item">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="MyWork.html" style = "font-family:century-gothic, sans-serif;">My Work</a>
+            <a class="nav-link hover-underline-animation" href="MyWork.html" style = "font-family:century-gothic, sans-serif;">My Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="MyPortfolio.html" style = "font-family:century-gothic, sans-serif;" >My Portfolio</a>
+            <a class="nav-link hover-underline-animation" href="MyPortfolio.html" style = "font-family:century-gothic, sans-serif;" >My Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="AboutMe.html" style = "font-family:century-gothic, sans-serif;">About Me</a>
+            <a class="nav-link hover-underline-animation" href="AboutMe.html" style = "font-family:century-gothic, sans-serif;">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ContactMe.html" style = "font-family:century-gothic, sans-serif;">Contact Me</a>
+            <a class="nav-link hover-underline-animation" href="ContactMe.html" style = "font-family:century-gothic, sans-serif;">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-    <h1>
-        About Me Page
+    <h1 style="color: whitesmoke; text-align: center;">
+        About Me: Niko Salamagi 
     </h1>
-
-    <footer class="bg-dark text-white p-3">
-      <div class = "text-align">
-        &copy; 2024 Salamagi Architects  <a href="https://www.linkedin.com/in/niko-salmaggi-9917952b7/"><i class="bi bi-linkedin" style = text-align:center; ></i></a>
-        <a href = "https://www.instagram.com/niko_salmaggi/"><i class="bi bi-instagram" style = text-align:center;></i> </a>
-        <a style = float:right; >Devloped by Michael Ramos</a>
+    <div style="display: flex; align-items: center;">
+      <div style="margin-left: 20px;">
+          <img class = "intro1" src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
+      </div>
+      <div style="margin-left: 20px; color: whitesmoke;">
+          <p class = "intro1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem odit voluptatem dolorem illum rerum in, deserunt dicta possimus atque fuga quae quo molestias quibusdam nisi accusantium. Ea rerum commodi facilis?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ab molestiae nostrum fuga odio cum optio illum eius perspiciatis cumque veritatis inventore, et dolor minima laudantium voluptatibus maiores nulla. A.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate deserunt corrupti enim odit fugiat, commodi iste placeat assumenda cumque architecto quos quibusdam dolorem voluptatum similique est incidunt magni ut expedita?
+          </p>
+      </div>
+  </div>
+  <div style="display: flex; align-items: center; margin-top: 20px;">
+      <div style="flex: 1; margin-left: 20px; color: whitesmoke;">
+          <p class = "intro2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, in optio. Quas obcaecati, voluptate ipsum sapiente velit vel labore consequuntur neque sint expedita minima numquam minus repellat laborum officiis iusto?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ipsum ullam quia et facilis, labore consequatur ipsa! Id suscipit explicabo porro odit dicta deserunt corrupti facere enim architecto? Dignissimos, laboriosam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam voluptates repellendus debitis necessitatibus, nesciunt, esse delectus sed quibusdam, modi fugit voluptatibus. Quis ullam nulla inventore eligendi at quo. Itaque?
+          </p>
+      </div>
+      <div style="margin-right: 20px;">
+          <img class = "intro2"src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
+      </div>
+  </div>
+  
+  <div style="display: flex; align-items: center; margin-top: 40px;">
+      <div style="margin-left: 20px;">
+          <img class = "intro3" src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
+      </div>
+      <div style="margin-left: 20px; color: whitesmoke;">
+          <p class = "intro3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempora similique consequatur. Aliquam voluptate dolorum voluptatibus incidunt exercitationem eius enim doloremque corporis atque laudantium optio vero, nobis deserunt repudiandae voluptatem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit accusamus eaque atque porro voluptas dolor tempora maxime facilis, harum, unde dolore consequuntur sunt nemo ipsa placeat ab eligendi. Explicabo.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi fugit delectus vel exercitationem autem nostrum, quibusdam, voluptate unde laborum, aperiam eaque explicabo nihil quod? Voluptatem dolorum delectus ut a dolorem.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, sed corrupti dolorum deserunt sequi nulla voluptatum qui quia esse provident! Minima tenetur error dolorem ut consequuntur cumque, quam expedita quae!
+          </p>
+      </div>
+  </div>
+  <div style="display: flex; align-items: center; margin-top: 20px;">
+      <div style="flex: 1; margin-left: 20px; color: whitesmoke">
+          <p class = "intro4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quos soluta repellat repudiandae dolores! Laudantium aperiam, libero qui dignissimos sapiente assumenda nisi? Animi sit aliquam ex, perspiciatis non unde vero!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus ex alias facere ut tenetur ab impedit nemo ea explicabo. Eos adipisci ipsam atque, reprehenderit quidem itaque excepturi architecto corrupti?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ratione, labore, iure reiciendis saepe inventore sed, non perspiciatis ipsa soluta excepturi dolores nulla? Similique sunt tenetur quibusdam ipsam dolore voluptatem?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, molestias? A totam quo cum. Excepturi magni fugit minima, unde ex ipsum illum optio quae et beatae fugiat tempore ut ratione!
+          </p>
+      </div>
+      <div style="margin-right: 20px;">
+          <img class = "intro4" src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
+      </div>
+  </div>
+  
+  
+  
+    <footer class="bg-black text-white p-3">
+      <div class="container-fluid" style="font-family: century-gothic, sans-serif;">
+        <div class="row">
+          <div class="col-md-6 text-start">&copy; 2024 Salamagi Architects
+            <a href="https://www.linkedin.com/in/niko-salmaggi-9917952b7/" class="social">
+              <i id="social-linkedin" class="bi bi-linkedin text-white hover-underline-animation"></i>
+            </a>
+            <a href="https://www.instagram.com/niko_salmaggi/" class="social">
+              <i id="social-instagram" class="bi bi-instagram text-white hover-underline-animation"></i>
+            </a>
+          </div>
+          <div class="col-md-6 text-end">Developed by Michael Ramos</div>
+        </div>
       </div>
     </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
