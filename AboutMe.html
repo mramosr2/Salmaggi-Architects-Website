@@ -9,156 +9,158 @@
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <style>
         body { 
-  font-family: century-gothic, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-     a {
-          text-decoration: none;
-          color: black;
-         }
+            font-family: century-gothic, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: black;
+            color: whitesmoke;
+        }
 
-         a:hover{
-          color: green;
-         }
-         
-         .hover-underline-animation {
-        display: inline-block;
-        position: relative;
-        color: whitesmoke;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+            color: whitesmoke;
         }
 
         .hover-underline-animation::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: whitesmoke;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: whitesmoke;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
         }
 
         .hover-underline-animation:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
 
         @keyframes fade-up {
-          0% {
-            opacity: 0;
-            transform: translateY(30px) scale(0.9);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0px) scale(1);
-          }
+            0% {
+                opacity: 0;
+                transform: translateY(30px) scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px) scale(1);
+            }
         }
 
         .intro1 {
-          animation: fade-up 2s;
+            animation: fade-up 2s;
         }
 
         .intro2 {
-          animation: fade-up 6s;
+            animation: fade-up 6s;
         }
 
         .intro3 {
-          animation: fade-up 9s;
+            animation: fade-up 9s;
         }
 
         .intro4 {
-          animation: fade-up 12s;
+            animation: fade-up 12s;
         }
 
     </style>
 </head>
-<body style = "background-color: black;">
-  <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark" id = "navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand hover-underline-animation" href="index.html" style = "font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hover-underline-animation" href="MyWork.html" style = "font-family:century-gothic, sans-serif;">My Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hover-underline-animation" href="MyPortfolio.html" style = "font-family:century-gothic, sans-serif;" >My Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hover-underline-animation" href="AboutMe.html" style = "font-family:century-gothic, sans-serif;">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hover-underline-animation" href="ContactMe.html" style = "font-family:century-gothic, sans-serif;">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    <h1 style="color: whitesmoke; text-align: center;">
-        About Me: Niko Salamagi 
-    </h1>
-    <div style="display: flex; align-items: center;">
-      <div style="margin-left: 20px;">
-          <img class = "intro1" src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
-      </div>
-      <div style="margin-left: 20px; color: whitesmoke;">
-          <p class = "intro1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem odit voluptatem dolorem illum rerum in, deserunt dicta possimus atque fuga quae quo molestias quibusdam nisi accusantium. Ea rerum commodi facilis?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ab molestiae nostrum fuga odio cum optio illum eius perspiciatis cumque veritatis inventore, et dolor minima laudantium voluptatibus maiores nulla. A.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate deserunt corrupti enim odit fugiat, commodi iste placeat assumenda cumque architecto quos quibusdam dolorem voluptatum similique est incidunt magni ut expedita?
-          </p>
-      </div>
-  </div>
-  <div style="display: flex; align-items: center; margin-top: 20px;">
-      <div style="flex: 1; margin-left: 20px; color: whitesmoke;">
-          <p class = "intro2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, in optio. Quas obcaecati, voluptate ipsum sapiente velit vel labore consequuntur neque sint expedita minima numquam minus repellat laborum officiis iusto?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ipsum ullam quia et facilis, labore consequatur ipsa! Id suscipit explicabo porro odit dicta deserunt corrupti facere enim architecto? Dignissimos, laboriosam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam voluptates repellendus debitis necessitatibus, nesciunt, esse delectus sed quibusdam, modi fugit voluptatibus. Quis ullam nulla inventore eligendi at quo. Itaque?
-          </p>
-      </div>
-      <div style="margin-right: 20px;">
-          <img class = "intro2"src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
-      </div>
-  </div>
-  
-  <div style="display: flex; align-items: center; margin-top: 40px;">
-      <div style="margin-left: 20px;">
-          <img class = "intro3" src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
-      </div>
-      <div style="margin-left: 20px; color: whitesmoke;">
-          <p class = "intro3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempora similique consequatur. Aliquam voluptate dolorum voluptatibus incidunt exercitationem eius enim doloremque corporis atque laudantium optio vero, nobis deserunt repudiandae voluptatem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit accusamus eaque atque porro voluptas dolor tempora maxime facilis, harum, unde dolore consequuntur sunt nemo ipsa placeat ab eligendi. Explicabo.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi fugit delectus vel exercitationem autem nostrum, quibusdam, voluptate unde laborum, aperiam eaque explicabo nihil quod? Voluptatem dolorum delectus ut a dolorem.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, sed corrupti dolorum deserunt sequi nulla voluptatum qui quia esse provident! Minima tenetur error dolorem ut consequuntur cumque, quam expedita quae!
-          </p>
-      </div>
-  </div>
-  <div style="display: flex; align-items: center; margin-top: 20px;">
-      <div style="flex: 1; margin-left: 20px; color: whitesmoke">
-          <p class = "intro4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quos soluta repellat repudiandae dolores! Laudantium aperiam, libero qui dignissimos sapiente assumenda nisi? Animi sit aliquam ex, perspiciatis non unde vero!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus ex alias facere ut tenetur ab impedit nemo ea explicabo. Eos adipisci ipsam atque, reprehenderit quidem itaque excepturi architecto corrupti?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ratione, labore, iure reiciendis saepe inventore sed, non perspiciatis ipsa soluta excepturi dolores nulla? Similique sunt tenetur quibusdam ipsam dolore voluptatem?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, molestias? A totam quo cum. Excepturi magni fugit minima, unde ex ipsum illum optio quae et beatae fugiat tempore ut ratione!
-          </p>
-      </div>
-      <div style="margin-right: 20px;">
-          <img class = "intro4" src="https://placehold.co/600x400/EEE/31343C" style="width: 400px;">
-      </div>
-  </div>
-  
-  
-  
+<body>
+    <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand hover-underline-animation" href="index.html" style="font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="MyWork.html" style="font-family:century-gothic, sans-serif;">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="MyPortfolio.html" style="font-family:century-gothic, sans-serif;" >My Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="AboutMe.html" style="font-family:century-gothic, sans-serif;">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="ContactMe.html" style="font-family:century-gothic, sans-serif;">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">About Me: Niko Salamagi</h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img class="img-fluid intro1" src="https://placehold.co/600x400/EEE/31343C" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p class="intro1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius sunt, sequi assumenda omnis delectus est totam odit ea error consequatur animi suscipit, voluptates deserunt facilis eos illum voluptatum vitae sit?
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ipsum hic nesciunt repudiandae esse, qui eligendi, aliquam laudantium eveniet dolore deleniti. Esse in voluptatibus accusamus voluptatum sapiente veniam iste dolore.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem facere ipsam recusandae fugit ex neque, perferendis optio veniam sequi provident, cupiditate modi deleniti dicta vero architecto animi, commodi necessitatibus?
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste atque ut natus eos, culpa architecto earum eius! Inventore excepturi unde magni vel, id laboriosam ex, harum nulla molestiae aut numquam?
+                  </p>  
+            </div>
+        </div>
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6 order-lg-2">
+                <img class="img-fluid intro2" src="https://placehold.co/600x400/EEE/31343C" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <p class="intro2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio a voluptatem, ad, magni assumenda explicabo, nihil illum commodi quia repellat quis repudiandae consequuntur temporibus ipsum architecto nulla officia odit aut.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates accusamus vitae similique ex iusto placeat minima voluptas aperiam. Quisquam iure eos veritatis explicabo dignissimos non fugit ab impedit vel!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloremque cum enim. Est, non? Sapiente illum amet cupiditate eum cum fuga animi nostrum quis, aspernatur explicabo ex ipsam facere est.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae itaque similique, dolorem maxime quidem hic ratione amet repellendus accusamus ut aspernatur provident modi mollitia nisi perferendis quisquam dolores alias at?
+                  </p>  
+            </div>
+        </div>
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6">
+                <img class="img-fluid intro3" src="https://placehold.co/600x400/EEE/31343C" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p class="intro3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur, dolorum non in quidem tenetur, error fugiat ducimus modi assumenda aliquid. Quisquam itaque deleniti culpa repudiandae, nostrum debitis totam quasi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus doloremque in odio enim nisi id. Perspiciatis, dolorem itaque? Maiores explicabo, perferendis hic placeat sunt eius ratione labore aspernatur ad.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aspernatur iste error ratione, assumenda numquam illum quam exercitationem maxime, fugiat fugit dolorem sit veniam voluptates. Ullam eveniet veniam voluptas corporis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias fugit obcaecati placeat distinctio repellendus perspiciatis dicta fuga, quas quaerat dignissimos quisquam natus exercitationem sequi illum, repellat ratione reiciendis voluptate.
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6 order-lg-2">
+                <img class="img-fluid intro4" src="https://placehold.co/600x400/EEE/31343C" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <p class="intro4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae assumenda rem animi dolores laboriosam pariatur, amet, in officia non numquam voluptate dolorum placeat quo odio incidunt nihil iusto possimus. Adipisci?
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut placeat ipsa iure maiores ipsam, nihil obcaecati adipisci magnam dolorum quam voluptatem quas distinctio qui. Minus pariatur nisi maxime inventore asperiores!
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem suscipit perspiciatis ab, illo unde sit earum, sed nobis eaque sint beatae tenetur dolores quam, inventore pariatur placeat sequi quo! Numquam.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique earum rem, laborum accusamus velit eveniet id rerum necessitatibus nihil dolorem odit, officia ullam eum, voluptas voluptatum voluptates quisquam fugit?
+                </p>
+
+            </div>
+        </div>
+    </div>  
     <footer class="bg-black text-white p-3">
       <div class="container-fluid" style="font-family: century-gothic, sans-serif;">
         <div class="row">
