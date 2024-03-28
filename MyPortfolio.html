@@ -47,6 +47,21 @@ font-style: normal;
         transform-origin: bottom left;
         }
 
+        @keyframes fade-up {
+        0% {
+          opacity: 0;
+          transform: translateY(30px) scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+        }
+      }
+
+      .intro {
+        animation: fade-up 2s;
+      }
+
   </style>
 </head>
 <body style = "background-color: black;">
@@ -76,12 +91,15 @@ font-style: normal;
       </div>
     </div>
   </nav>
-    <h2 style = "color: whitesmoke">Niko Salamagi's Portfolio</h2>
-<div style = "color: whitesmoke">
+    <h2 style = "color: whitesmoke; text-align: center;" class = "intro">Niko Salamagi's Portfolio</h2>
+<div style = "color: whitesmoke; text-align: center;" class = "intro">
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea libero ut error nulla soluta earum natus accusantium id alias sed deserunt rem, eum voluptas animi optio a, culpa repudiandae deleniti?
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eum, illum temporibus obcaecati atque molestias fugit expedita tempora nesciunt recusandae excepturi nemo quas enim minima nostrum quia blanditiis earum id.
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta saepe error nulla perspiciatis voluptas eligendi ab hic cumque possimus, praesentium eius placeat similique laborum recusandae unde, eveniet accusamus maxime magni?
   </p>
+  <div>
+    <embed src="Nicholas Salmaggi Portfolio-compressed.pdf" width="1000px" height="1000px" />
+  </div>
 </div>
 
 <footer class="bg-black text-white p-3">
