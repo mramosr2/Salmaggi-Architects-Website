@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Salamagi Experience</title>
+    <title>Salmaggi Architects | About Me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
@@ -76,9 +76,25 @@
             animation: fade-up 12s;
         }
 
+        .skip-to-main-content-link {
+          position: absolute;
+          left: -9999px;
+          z-index: 999;
+          padding: 1em;
+          background-color: black;
+          color: white;
+          opacity: 0;
+        } 
+        .skip-to-main-content-link:focus {
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+        }
+
     </style>
 </head>
 <body>
+    <a href="#main" class="skip-to-main-content-link" style = "color:whitesmoke">Skip to main content</a>
     <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand hover-underline-animation" href="index.html" style="font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
@@ -106,7 +122,7 @@
         </div>
     </nav>
     <div class="container mt-5">
-        <h1 class="text-center">About Me: Niko Salamagi</h1>
+        <h1 class="text-center" id = "main">About Me: Niko Salmaggi</h1>
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <img class="img-fluid intro1" src="https://placehold.co/600x400/EEE/31343C" alt="">
@@ -164,7 +180,7 @@
     <footer class="bg-black text-white p-3">
       <div class="container-fluid" style="font-family: century-gothic, sans-serif;">
         <div class="row">
-          <div class="col-md-6 text-start">&copy; 2024 Salamagi Architects
+          <div class="col-md-6 text-start">&copy; 2024 Salmaggi Architects
             <a href="https://www.linkedin.com/in/niko-salmaggi-9917952b7/" class="social">
               <i id="social-linkedin" class="bi bi-linkedin text-white hover-underline-animation"></i>
             </a>
