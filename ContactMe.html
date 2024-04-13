@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Salamagi Experience</title>
+    <title>Salmaggi Architects | Contact Me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
@@ -12,6 +12,7 @@
 font-family: century-gothic, sans-serif;
 font-weight: 400;
 font-style: normal;
+color: whitesmoke
 }
 
         a {
@@ -62,10 +63,26 @@ font-style: normal;
         .intro1 {
           animation: fade-up 3s;
         }
+
+        .skip-to-main-content-link {
+          position: absolute;
+          left: -9999px;
+          z-index: 999;
+          padding: 1em;
+          background-color: black;
+          color: white;
+          opacity: 0;
+        } 
+        .skip-to-main-content-link:focus {
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+        }
         
   </style>
 </head>
 <body style = "background-color: black;">
+  <a href="#main" class="skip-to-main-content-link" style = "color:whitesmoke">Skip to main content</a>
   <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark" id = "navbar">
     <div class="container-fluid">
       <a class="navbar-brand hover-underline-animation" href="index.html" style = "font-family:century-gothic, sans-serif;"><i class="bi bi-house"> Home</i></a>
@@ -92,16 +109,23 @@ font-style: normal;
       </div>
     </div>
   </nav>
-  <div class = "intro1">
+  <div class = "intro1" id = "main">
     <h2 style = "text-align: center; color: whitesmoke;">Contact Me</h2>
 
-    <img src = "Pic1.jpg" class="img-fluid" alt="Responsive image" style="max-width: 100%;">
-    <div>
-    <p style = " color: whitesmoke; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit quos molestiae veniam vero odit quaerat nesciunt mollitia officiis. Debitis nam dicta similique ipsam amet, voluptatum explicabo illo eum alias!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti excepturi animi, quod voluptatum rerum velit, dolore distinctio dolores similique, culpa corporis. Consectetur quas, commodi eum eaque numquam amet sint!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae animi facilis, aut, asperiores dolores maxime sapiente ipsam expedita voluptate, delectus pariatur qui eligendi repellat rem fuga et veritatis architecto beatae?
-    </p>
-    </div>
+    <div class="container mt-5">
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <img class="img-fluid intro1" src="https://placehold.co/600x400/EEE/31343C" alt="">
+          </div>
+          <div class="col-lg-6">
+              <p class="intro1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec eros rutrum lacinia
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius sunt, sequi assumenda omnis delectus est totam odit ea error consequatur animi suscipit, voluptates deserunt facilis eos illum voluptatum vitae sit?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ipsum hic nesciunt repudiandae esse, qui eligendi, aliquam laudantium eveniet dolore deleniti. Esse in voluptatibus accusamus voluptatum sapiente veniam iste dolore.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem facere ipsam recusandae fugit ex neque, perferendis optio veniam sequi provident, cupiditate modi deleniti dicta vero architecto animi, commodi necessitatibus?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste atque ut natus eos, culpa architecto earum eius! Inventore excepturi unde magni vel, id laboriosam ex, harum nulla molestiae aut numquam?
+                </p>  
+          </div>
+      </div>
     <div style = "text-align: center;  color: whitesmoke;"> 
       Reach me at: 
       <a href = "mailto: abc@example.com" style = "text-align: center;  color: whitesmoke;" class = "hover-underline-animation">abc@example.com</a>
@@ -111,7 +135,7 @@ font-style: normal;
     <footer class="bg-black text-white p-3">
       <div class="container-fluid" style="font-family: century-gothic, sans-serif;">
         <div class="row">
-          <div class="col-md-6 text-start">&copy; 2024 Salamagi Architects
+          <div class="col-md-6 text-start">&copy; 2024 Salmaggi Architects
             <a href="https://www.linkedin.com/in/niko-salmaggi-9917952b7/" class="social">
               <i id="social-linkedin" class="bi bi-linkedin text-white hover-underline-animation"></i>
             </a>
